@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>heter 的私人网站</title>
+    <title>网站</title>
     <style>
         a {
             text-decoration: none;
@@ -14,54 +14,33 @@
             color: #dddddd;
         }
     </style>
+    <script>
+        function checkPassword(){
+            var password = document.getElementById("passwordBox").value;
+            if(password == "heter"){
+                window.location.href = "home.html";
+            }
+            else{
+                alert("拒绝访问");
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
-        <h1><div style="text-align: center;"><b style="color:gold">heter</b> 的私人网站</div></h1>
-        <nav>
-            <h2><a onclick="this.style.color='blue'" href="https://heter.lanzoul.com/b0397knmf" target="_blank" onmouseover="this.style.color = 'dodgerblue'" onmouseout="this.style.color = 'deepskyblue'">进入文件传输域</a></h2>
-            <h2 style="color:aqua;">ChatGPT API Key：<c style="color:aquamarine">sk-zryYEffZNJdKU4JzD7pbyLQUvpbyRsBxS5KEUB3iboVjLahN</c></h2>
-            <h2 style="color:aqua;">命令行Taskkill终止极域进程方法：<c style="color:aquamarine">taskkill /f /im studentmain.exe</c></h2>
-        </nav>
+        <h1><div style="text-align: center;">网站</div></h1>
     </header>
 
     <main>
         <section>
-            <h2>欢迎来到 <b style="color:gold">heter</b> 的私人网站！</h2>
-            <p>这是个由寄术糕超的 <b style="color:gold">heter</b> 创建的私人网站！</p>
-        </section>
-
-        <section>
-            <h2>关于这个私人网站</h2>
-            <p>这个私人网站专门用于传输亿些文件与信息！</p>
-        </section>
-
-        <section>
-            <h2>关于 <b style="color:gold">"heter"</b></h2>
-            <p>是个用户名，全名为<b style="color:gold">heter</b><b style="color: goldenrod;">0morphic3</b> <c style="color: gray;">/</c> <b style="color:gold">heter</b><b style="color: goldenrod;">0typic3</b>！</p>
-        </section>
-
-        <section>
-            <h2>网站更新情况</h2>
-            <article>
-                <h3>2023/11/26</h3>
-                <p>网站格式修改，修Bug，建立为GitHub托管Pages。</p>
-            </article>
-            <article>
-                <h3>2023/11/25</h3>
-                <p>网站编写完成。</p>
-            </article>
-        </section>
-
-        <section>
-            <h2>文件传输域更新情况</h2>
-            <h3>2023/11/26 更新</h3>
-            <h3>2023/11/25 更新</h3>
+            <h2>输入访问密码</h2>
+            <p><input id = "passwordBox" type="password"/></p>
+            <p><input id = "passwordBotton" type="button" value="进入" onclick="return checkPassword();"/></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 heter0morphic3's personal site. All rights reserved.</p>
+        <p>&copy; 2023 HTML. All rights reserved.</p>
     </footer>
 </body>
 </html>
