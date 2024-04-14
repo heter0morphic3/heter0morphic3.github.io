@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>作品提醒</title>
+	<title>L2024/4/14型作品规定</title>
 	<meta charset="utf-8">
 	<style type="text/css">
 		body{
@@ -9,22 +9,6 @@
             background-color: #333;
             color: #fff;
             font-size: 20px;
-        }
-        a:link {
-            color: aqua;
-            text-decoration: none;
-        }
-        a:visited {
-            color:aqua;
-            text-decoration:none;
-        }
-        a:hover {
-            color:deepskyblue;
-            text-decoration:none;
-        }
-        a:active {
-            color:dodgerblue;
-            text-decoration:none;
         }
         .waring{
             color: red;
@@ -52,7 +36,7 @@
             margin-bottom: 10px;
             text-align: center;
         }
-        .form-group input[type="number"],.form-group input[type="email"],.form-group textarea{
+        .form-group input[type="text"],.form-group input[type="email"],.form-group textarea{
             width: 75%;
             padding: 10px;
             border: 1px solid #ccc;
@@ -84,32 +68,15 @@
 	</style>
 </head>
 <body>
-    <script type="text/javascript">
-        function upload(){
-            var number = document.getElementById("number").value;
-            if(number >= 1 && number <= 22){
-                alert("提醒成功！");
-            }
-            else{
-                alert("五(1)班好像还没有这个学号？");
-                return false;
-            }
-        }
-    </script>
-	<h1>作品上交提醒</h1>
+	<h1>L2024/4/14型作品规定</h1>
 	<div class="container">
 		<form action="" method="post">
-            <div class="form-group" align="center">此网页用于提醒信息委员来查看你的作品，请提前准备好完整作品，并在提醒之前保证作品遵守<a href="L2024n4y14r.html" target="_blank">L2024/4/14型作品规定</a>，否则一切后果由提醒者承担。</div>
-            <form action="script.py" method="POST">
-			    <div class="form-group">
-				    <label for="name">学号</label>
-				    <input type="number" name="number" id="number" required>
-			    </div>
-            </form>
-            <div class="waring" align="center">⚠警告：请再三确认作品是否合格！</div>
-			<div class="form-group" align="center">
-				<input type="submit" value="提醒" onclick="upload()">
-			</div>
+            <div class="form-group" align="center">L2024/4/14型作品规定：</div>
+            <div class="form-group" align="center">1.禁止抄袭他人作品</div>
+            <div class="form-group" align="center">2.禁止复制他人作品</div>
+            <div class="form-group" align="center">3.禁止给别人抄袭你的作品</div>
+            <div class="form-group" align="center">4.禁止给别人复制你的作品</div>
+            <div class="form-group" align="center">5.禁止在未经他人许可下剽窃他人作品</div>
 		</form>
 	</div>
 </body>
