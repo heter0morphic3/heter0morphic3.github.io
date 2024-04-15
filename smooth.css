@@ -1,0 +1,43 @@
+@keyframes slideUp {
+    from {
+        transform: translateY(50%); /* 动画开始时，元素位于其原始位置的下方 */
+      }
+    to {
+        transform: translateY(0%); /* 动画结束时，元素回到其原始位置 */
+      }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* 动画开始时，元素位于其原始位置的下方 */
+      }
+    to {
+        opacity: 1; /* 动画结束时，元素回到其原始位置 */
+      }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+      }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+}
+
+.slideUp {
+    animation-duration: 1.5s;
+    animation-name: slideUp;
+}
+
+.fadeIn {
+    animation-duration: 1.5s;
+    animation-name: fadeIn;
+}
+
+.fadeUp {
+    animation-duration: 1.5s;
+    animation-name: fadeUp;
+}

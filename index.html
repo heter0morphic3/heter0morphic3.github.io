@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>L2024/4/14型作品规定</title>
+	<title>Li主页</title>
 	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stardraw.css" /> 
+    <link rel="stylesheet" type="text/css" href="smooth.css" /> 
 	<style type="text/css">
 		body{
             font-family: "微软雅黑";
@@ -16,7 +18,7 @@
         }
         h1{
             text-align: center;
-            margin-top: 50px;
+            margin-top: 100px;
             font-size: 36px;
         }
         .container{
@@ -53,7 +55,7 @@
         .form-group textarea{
             height: 200px;
         }
-        .form-group input[type="submit"]{
+        .form-group input[type="button"]{
             background-color: #333;
             color: #fff;  
             padding: 10px 20px;
@@ -62,22 +64,39 @@
             font-size: 24px;
             cursor: pointer;
         }
-        .form-group input[type="submit"]:hover{
+        .form-group input[type="button"]:hover{
             background-color: #666;
+        }
+        a:link {
+            color: aqua;
+            text-decoration: none;
+        }
+        a:visited {
+            color:aqua;
+            text-decoration:none;
+        }
+        a:hover {
+            color:deepskyblue;
+            text-decoration:none;
+        }
+        a:active {
+            color:dodgerblue;
+            text-decoration:none;
         }
 	</style>
 </head>
 <body>
-	<h1>L2024/4/14型作品规定</h1>
-	<div class="container">
-		<form action="" method="post">
-            <div class="form-group" align="center">L2024/4/14型作品规定：</div>
-            <div class="form-group" align="center">1.禁止抄袭他人作品</div>
-            <div class="form-group" align="center">2.禁止复制他人作品</div>
-            <div class="form-group" align="center">3.禁止给别人抄袭你的作品</div>
-            <div class="form-group" align="center">4.禁止给别人复制你的作品</div>
-            <div class="form-group" align="center">5.禁止在未经他人许可下剽窃他人作品</div>
-		</form>
+	<h1 class="fadeIn">Li主页</h1>
+	<div class="container fadeUp">
+            <div class="form-group fadeUp" align="center">欢迎来到Li主页！</div>
+            <div class="form-group fadeUp" align="center">
+                点击这里查看<a href="L2024n4y14r.html">L2024/4/14型作品规定</a>
+            </div>
+            <div class="form-group fadeUp" align="center">
+                点击这里游玩<a href="保卫小鱼.html" target="_blank">保卫小鱼</a>网页还原版
+            </div>
 	</div>
+    <canvas id="starfield"></canvas>
 </body>
+<script src="./stardraw.js"></script>
 </html>
